@@ -9,9 +9,13 @@
 </head>
 
 <body>
-    <h1>Template Laravel</h1>
+    <h1 class="m-3">Trains</h1>
 
-    <img src="{{ Vite::asset('resources/img/pikachu.png') }}" alt="">
+    <ul>
+        @foreach($trains as $train)
+        <li>@include('shared.train')</li>
+        @endforeach
+    </ul>
 </body>
 
 </html>

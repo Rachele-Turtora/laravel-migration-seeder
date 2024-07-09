@@ -1,5 +1,17 @@
 @import "~bootstrap/scss/bootstrap";
 
-body {
-    background-color: yellow;
+ul {
+    list-style-type: none;
+}
+
+.card {
+    width: calc(100% / 4 - 20px);
+    margin: 10px;
+    border-radius: 5px;
+    background-color: rgb(253, 253, 124);
+    padding: 10px;
+}
+
+.card p {
+    font-size: 22px;
 }
