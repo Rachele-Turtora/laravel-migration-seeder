@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <h1 class="m-3">Trains</h1>
+    <h1 class="m-3">Treni in partenza oggi: </h1>
 
     <ul>
         @foreach($trains as $train)
