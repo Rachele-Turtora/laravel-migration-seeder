@@ -14,7 +14,7 @@ class PageController extends Controller
         $today = Carbon::today();
 
         $data = [
-            'trains' => Train::whereDate('departure_time', $today)->get()
+            'trains' => Train::whereDate('departure_time', '>=', $today)->orderBy('departure_time')->get()
         ];
 
         return view('welcome', $data);
